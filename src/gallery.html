@@ -1,642 +1,924 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+  <head>
+    <title>Gene Logic</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="" />
 
-	<head>
-		<title>Gene Logic</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui"
+    />
 
-		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-		<meta name="viewport" content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui" />
+    <meta name="theme-color" content="#4A8B71" />
+    <meta name="msapplication-navbutton-color" content="#4A8B71" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#4A8B71" />
 
-		<meta name="theme-color" content="#4A8B71" />
-		<meta name="msapplication-navbutton-color" content="#4A8B71" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="#4A8B71" />
-
-		<!-- Favicons
+    <!-- Favicons
 		================================================== -->
-		<link rel="shortcut icon" href="img/favicon.ico">
-		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/apple-touch-icon-114x114.png"
+    />
 
-		<!-- CSS
+    <!-- CSS
 		================================================== -->
-		<link rel="stylesheet" href="../css/style.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.min.css" type="text/css" />
 
-		<!-- Load google font
+    <!-- Load google font
 		================================================== -->
-		<script type="text/javascript">
-			WebFontConfig = {
-				google: { families: [ 'Poppins:300,400,500,600,700', 'Raleway:400,400i,500,500i,700,700i'] }
-			};
-			(function() {
-				var wf = document.createElement('script');
-				wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + 
-				'://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
-				wf.type = 'text/javascript';
-				wf.async = 'true';
-				var s = document.getElementsByTagName('script')[0];
-				s.parentNode.insertBefore(wf, s);
-			})();
-		</script>
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: {
+          families: [
+            "Poppins:300,400,500,600,700",
+            "Raleway:400,400i,500,500i,700,700i"
+          ]
+        }
+      };
+      (function() {
+        var wf = document.createElement("script");
+        wf.src =
+          ("https:" == document.location.protocol ? "https" : "http") +
+          "://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js";
+        wf.type = "text/javascript";
+        wf.async = "true";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
 
-		<!-- Load other scripts
+    <!-- Load other scripts
 		================================================== -->
-		<script type="text/javascript">
-			var _html = document.documentElement;
-			_html.className = _html.className.replace("no-js","js");
-		</script>
-		<script type="text/javascript" src="../js/device.min.js"></script>
-	</head>
-	<body class="page page-gallery">
-
-	<!-- start top bar -->
-	<div id="top-bar" class="top-bar--style-1">
-		<div class="container">
-			<a id="top-bar__logo" class="site-logo" href="index.html">Gene Logic</a>
-			<a id="top-bar__navigation-toggler" href="javascript:void(0);"><span></span></a>
-			<nav id="top-bar__navigation" role="navigation">
-				<ul>
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="index.html">About</a>
-					</li>
-					<li class="current">
-						<a href="index.html">Product Categories</a>
-					</li>
-					<li><a href="index.html">Services</a></li>
-					<li><a href="index.html">News</a></li>
-					<li class="li-btn"><a class="custom-btn primary" href="#spy-get-in-touch">Get in touch</a></li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-	<!-- end top bar -->
-
-		<!-- start header -->
-		<header class="intro  align-items-center  jarallax" data-speed="0.5" data-img-position="50% 34%" style="background-image: url('../img/bg/bg_4.jpg');">
-
-			<div class="pattern" style="opacity: 0.25;"></div>
-
-			<div class="container">
-				<div class="intro__text">
-					<p class="intro__subtitle">GeneLogic</p>
-					<h1 class="intro__title">Products</h1>
-				</div>
-			</div>
-		</header>
-		<!-- end header -->
-
-		<main role="main">
-			<!-- start section -->
-			<section class="section">
-				<div class="container">
-					<ul id="gallery-set">
-						<li><a class="selected" data-cat="*" href="#">All</a></li>
-						<li><a data-cat="category-1" href="#">Veterinary Products</a></li>
-						<li><a data-cat="category-2" href="#">Feed Additives</a></li>
-						<li><a data-cat="category-3" href="#">Raw Materials</a></li>
-						<li><a data-cat="category-4" href="#">Diagnostic Kit</a></li>
-					</ul>
-
-					<div class="gallery gallery--style-2">
-						<div class="gallery__inner">
-							<div class="row  js-isotope" data-isotope-options='{ "itemSelector": ".js-isotope__item", "transitionDuration": "0.8s", "percentPosition": "true"}'>
-								<!-- start item -->
-								<div class="col-12 col-md-6 col-lg-4  js-isotope__item category-1">
-									<div class="gallery__item">
-										<div class="gallery__item__inner">
-											<figure>
-												<img src="../img/blank.gif" style="background-image: url('../img/items/VETERINARY PRODUCTS/EKYBION.png');" alt="demo" />
-
-												<a href="../img/items/VETERINARY PRODUCTS/EKYBION.png" data-gallery="gall"></a>
-											</figure>
-										</div>
-
-										<div class="gallery__item__description">
-											<span class="gallery__item__title">EKYBION (Nasal Spray for Horse)</span>
-										</div>
-									</div>
-								</div>
-								<!-- end item -->
-
-								<!-- start item -->
-								<div class="col-12 col-md-6 col-lg-4  js-isotope__item category-1">
-									<div class="gallery__item">
-										<div class="gallery__item__inner">
-											<figure>
-												<img src="../img/blank.gif" style="background-image: url('../img/items/VETERINARY PRODUCTS/CADISTAN.png');" alt="demo" />
-
-												<a href="../img/items/VETERINARY PRODUCTS/CADISTAN.png" data-gallery="gall"></a>
-											</figure>
-										</div>
-
-										<div class="gallery__item__description">
-											<span class="gallery__item__title">CANDISTAN 4.4%</span>
-										</div>
-									</div>
-								</div>
-								<!-- end item -->
-
-									<!-- start item -->
-									<div class="col-12 col-md-6 col-lg-4  js-isotope__item category-1">
-										<div class="gallery__item">
-											<div class="gallery__item__inner">
-												<figure>
-													<img src="../img/blank.gif" style="background-image: url('../img/items/VETERINARY PRODUCTS/MOXILA.png');" alt="demo" />
-
-													<a href="../img/items/VETERINARY PRODUCTS/MOXILA.png" data-gallery="gall"></a>
-												</figure>
-											</div>
-	
-											<div class="gallery__item__description">
-												<span class="gallery__item__title">MOXI LA 15%</span>
-											</div>
-										</div>
-									</div>
-									<!-- end item -->
-<!-- start item -->
-<div class="col-12 col-md-6 col-lg-4  js-isotope__item category-1">
-	<div class="gallery__item">
-		<div class="gallery__item__inner">
-			<figure>
-				<img src="../img/blank.gif" style="background-image: url('../img/items/VETERINARY PRODUCTS/LINCO ACTIN.png');" alt="demo" />
-
-				<a href="../img/items/VETERINARY PRODUCTS/LINCO ACTIN.png" data-gallery="gall"></a>
-			</figure>
-		</div>
-
-		<div class="gallery__item__description">
-			<span class="gallery__item__title">LINCO ACTIN</span>
-		</div>
-	</div>
-</div>
-<!-- end item -->
-
-								<!-- start item -->
-								<div class="col-12 col-md-6 col-lg-4  js-isotope__item category-2">
-									<div class="gallery__item">
-										<div class="gallery__item__inner">
-											<figure>
-												<img src="../img/blank.gif" style="background-image: url('../img/items/FEED ADDITIVES/MEAT GAIN EXTREME.png');" alt="MEAT GAIN EXTREME" />
-												<a href="../img/items/FEED ADDITIVES/MEAT GAIN EXTREME.png" data-gallery="gall"></a>
-											</figure>
-										</div>
-
-										<div class="gallery__item__description">
-											<span class="gallery__item__title">MEAT GAIN XTREME</span>
-										</div>
-									</div>
-								</div>
-								<!-- end item -->
-
-									
-								<!-- start item -->
-								<div class="col-12 col-md-6 col-lg-4  js-isotope__item  category-2">
-									<div class="gallery__item">
-										<div class="gallery__item__inner">
-											<figure>
-												<img src="../img/blank.gif" style="background-image: url('../img/items/FEED ADDITIVES/MAXIPEP.png');" alt="MAXIPEP" />
-												
-									
-												<a href="../img/items/FEED ADDITIVES/MAXIPEP.png" data-gallery="gall"></a>
-											</figure>
-										</div>
-
-										<div class="gallery__item__description">
-											<span class="gallery__item__title">MAXIPEP</span>
-										</div>
-									</div>
-								</div>
-								<!-- end item -->
-
-	<!-- start item -->
-	<div class="col-12 col-md-6 col-lg-4  js-isotope__item category-2">
-		<div class="gallery__item">
-			<div class="gallery__item__inner">
-				<figure>
-					<img src="../img/blank.gif" style="background-image: url('../img/gall_img/3_col/7.jpg');" alt="demo" />
-
-					<a href="../img/gall_img/3_col/7.jpg" data-gallery="gall"></a>
-				</figure>
-			</div>
-
-			<div class="gallery__item__description">
-				<span class="gallery__item__title">YEAST POWDER FEED GRADE</span>
-			</div>
-		</div>
-	</div>
-	<!-- end item -->
-
-	<!-- start item -->
-	<div class="col-12 col-md-6 col-lg-4  js-isotope__item  category-2">
-		<div class="gallery__item">
-			<div class="gallery__item__inner">
-				<figure>
-					<img src="../img/blank.gif" style="background-image: url('../img/gall_img/3_col/8.jpg');" alt="demo" />
-
-					<a href="../img/gall_img/3_col/8.jpg" data-gallery="gall"></a>
-				</figure>
-			</div>
-
-			<div class="gallery__item__description">
-				<span class="gallery__item__title">FISH MEAL</span>
-			</div>
-		</div>
-	</div>
-	<!-- end item -->
-								
-
-								<!-- start item -->
-								<div class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3">
-									<div class="gallery__item">
-										<div class="gallery__item__inner">
-											<figure>
-												<img src="../img/blank.gif" style="background-image: url('../img/gall_img/3_col/3.jpg');" alt="demo" />
-
-												<a href="../img/gall_img/3_col/3.jpg" data-gallery="gall"></a>
-											</figure>
-										</div>
-
-										<div class="gallery__item__description">
-											<span class="gallery__item__title">GLACXYLIC OIL MONOLAURATE 45.5%</span>
-										</div>
-									</div>
-								</div>
-								<!-- end item -->
-
-								<!-- start item -->
-								<div class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3">
-									<div class="gallery__item">
-										<div class="gallery__item__inner">
-											<figure>
-												<img src="../img/blank.gif" style="background-image: url('../img/gall_img/3_col/4.jpg');" alt="demo" />
-
-												<a href="../img/gall_img/3_col/4.jpg" data-gallery="gall"></a>
-											</figure>
-										</div>
-
-										<div class="gallery__item__description">
-											<span class="gallery__item__title">GLACXYLIC OIL MONOLAURATE 10%</span>
-										</div>
-									</div>
-								</div>
-								<!-- end item -->
-<!-- start item -->
-<div class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3">
-	<div class="gallery__item">
-		<div class="gallery__item__inner">
-			<figure>
-				<img src="../img/blank.gif" style="background-image: url('../img/gall_img/3_col/4.jpg');" alt="demo" />
-
-				<a href="../img/gall_img/3_col/4.jpg" data-gallery="gall"></a>
-			</figure>
-		</div>
-
-		<div class="gallery__item__description">
-			<span class="gallery__item__title">Longwanda Probio (sow)</span>
-		</div>
-	</div>
-</div>
-<!-- end item -->
-						
-<!-- start item -->
-<div class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3">
-	<div class="gallery__item">
-		<div class="gallery__item__inner">
-			<figure>
-				<img src="../img/blank.gif" style="background-image: url('../img/gall_img/3_col/4.jpg');" alt="demo" />
-
-				<a href="../img/gall_img/3_col/4.jpg" data-gallery="gall"></a>
-			</figure>
-		</div>
-
-		<div class="gallery__item__description">
-			<span class="gallery__item__title">Longwanda Probio (Pig universal/general type)</span>
-		</div>
-	</div>
-</div>
-<!-- end item -->
-
-<!-- start item -->
-<div class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3">
-	<div class="gallery__item">
-		<div class="gallery__item__inner">
-			<figure>
-				<img src="../img/blank.gif" style="background-image: url('../img/gall_img/3_col/4.jpg');" alt="demo" />
-
-				<a href="../img/gall_img/3_col/4.jpg" data-gallery="gall"></a>
-			</figure>
-		</div>
-
-		<div class="gallery__item__description">
-			<span class="gallery__item__title">Longwanda Probiotics</span>
-		</div>
-	</div>
-</div>
-<!-- end item -->
-							
-
-								
-
-								<!-- start item -->
-								<div class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3">
-									<div class="gallery__item">
-										<div class="gallery__item__inner">
-											<figure>
-												<img src="../img/blank.gif" style="background-image: url('../img/gall_img/3_col/9.jpg');" alt="demo" />
-
-												<a href="../img/gall_img/3_col/9.jpg" data-gallery="gall"></a>
-											</figure>
-										</div>
-
-										<div class="gallery__item__description">
-											<span class="gallery__item__title">Gen CBS-50</span>
-										</div>
-									</div>
-								</div>
-								<!-- end item -->
-
-									<!-- start item -->
-									<div class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3">
-										<div class="gallery__item">
-											<div class="gallery__item__inner">
-												<figure>
-													<img src="../img/blank.gif" style="background-image: url('../img/gall_img/3_col/9.jpg');" alt="demo" />
-	
-													<a href="../img/gall_img/3_col/9.jpg" data-gallery="gall"></a>
-												</figure>
-											</div>
-	
-											<div class="gallery__item__description">
-												<span class="gallery__item__title">Log P-GABA</span>
-											</div>
-										</div>
-									</div>
-									<!-- end item -->
-
-										<!-- start item -->
-										<div class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3">
-											<div class="gallery__item">
-												<div class="gallery__item__inner">
-													<figure>
-														<img src="../img/blank.gif" style="background-image: url('../img/gall_img/3_col/9.jpg');" alt="demo" />
-		
-														<a href="../img/gall_img/3_col/9.jpg" data-gallery="gall"></a>
-													</figure>
-												</div>
-		
-												<div class="gallery__item__description">
-													<span class="gallery__item__title">Per Zinc S</span>
-												</div>
-											</div>
-										</div>
-										<!-- end item -->
-
-										<!-- start item -->
-										<div class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3">
-											<div class="gallery__item">
-												<div class="gallery__item__inner">
-													<figure>
-														<img src="../img/blank.gif" style="background-image: url('../img/gall_img/3_col/9.jpg');" alt="demo" />
-		
-														<a href="../img/gall_img/3_col/9.jpg" data-gallery="gall"></a>
-													</figure>
-												</div>
-		
-												<div class="gallery__item__description">
-													<span class="gallery__item__title">PerFerrous Gly</span>
-												</div>
-											</div>
-										</div>
-										<!-- end item -->
-
-											<!-- start item -->
-											<div class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3">
-												<div class="gallery__item">
-													<div class="gallery__item__inner">
-														<figure>
-															<img src="../img/blank.gif" style="background-image: url('../img/gall_img/3_col/9.jpg');" alt="demo" />
-			
-															<a href="../img/gall_img/3_col/9.jpg" data-gallery="gall"></a>
-														</figure>
-													</div>
-			
-													<div class="gallery__item__description">
-														<span class="gallery__item__title">PerFerrous Plus</span>
-													</div>
-												</div>
-											</div>
-											<!-- end item -->
-
-											<!-- start item -->
-											<div class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3">
-												<div class="gallery__item">
-													<div class="gallery__item__inner">
-														<figure>
-															<img src="../img/blank.gif" style="background-image: url('../img/gall_img/3_col/9.jpg');" alt="demo" />
-			
-															<a href="../img/gall_img/3_col/9.jpg" data-gallery="gall"></a>
-														</figure>
-													</div>
-			
-													<div class="gallery__item__description">
-														<span class="gallery__item__title">Per Premix SNR </span>
-													</div>
-												</div>
-											</div>
-											<!-- end item -->
-
-
-											<!-- start item -->
-											<div class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3">
-												<div class="gallery__item">
-													<div class="gallery__item__inner">
-														<figure>
-															<img src="../img/blank.gif" style="background-image: url('../img/gall_img/3_col/9.jpg');" alt="demo" />
-			
-															<a href="../img/gall_img/3_col/9.jpg" data-gallery="gall"></a>
-														</figure>
-													</div>
-			
-													<div class="gallery__item__description">
-														<span class="gallery__item__title">Log SNR R (Per Premix SNR Rice Oil) </span>
-													</div>
-												</div>
-											</div>
-											<!-- end item -->
-
-
-											<!-- start item -->
-											<div class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3">
-												<div class="gallery__item">
-													<div class="gallery__item__inner">
-														<figure>
-															<img src="../img/blank.gif" style="background-image: url('../img/gall_img/3_col/9.jpg');" alt="demo" />
-			
-															<a href="../img/gall_img/3_col/9.jpg" data-gallery="gall"></a>
-														</figure>
-													</div>
-			
-													<div class="gallery__item__description">
-														<span class="gallery__item__title">Log SNR CO (PerPremix SNR Coconut Oil)</span>
-													</div>
-												</div>
-											</div>
-											<!-- end item -->
-
-
-											<!-- start item -->
-											<div class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3">
-												<div class="gallery__item">
-													<div class="gallery__item__inner">
-														<figure>
-															<img src="../img/blank.gif" style="background-image: url('../img/gall_img/3_col/9.jpg');" alt="demo" />
-			
-															<a href="../img/gall_img/3_col/9.jpg" data-gallery="gall"></a>
-														</figure>
-													</div>
-			
-													<div class="gallery__item__description">
-														<span class="gallery__item__title">Per SNR LO (PerPremix SNR LINSEED OIL) </span>
-													</div>
-												</div>
-											</div>
-											<!-- end item -->
-
-
-												<!-- start item -->
-												<div class="col-12 col-md-6 col-lg-4  js-isotope__item  category-4">
-													<div class="gallery__item">
-														<div class="gallery__item__inner">
-															<figure>
-																<img src="../img/blank.gif" style="background-image: url('../img/gall_img/3_col/9.jpg');" alt="demo" />
-				
-																<a href="../img/gall_img/3_col/9.jpg" data-gallery="gall"></a>
-															</figure>
-														</div>
-				
-														<div class="gallery__item__description">
-															<span class="gallery__item__title">EBS Sentinel ASFV Antibody Rapid Test Kit </span>
-														</div>
-													</div>
-												</div>
-												<!-- end item -->
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end section -->
-
-			<!-- start section -->
-			<a id="spy-get-in-touch" class="ancor"></a>
-			<section class="section-contact">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-12 col-md-6 bg-1">
-							<div class="item">
-								<header class="item__header">
-									<h2 class="item__title" style="color: white;">Contacts</h2>
-
-									<p class="item__subtitle" style="color: white;">Mega bold action. Sold care wherever less appetizing your far easily</p>
-								</header>
-
-								<div class="company-contacts">
-									<address>
-										<p>
-											<i class="fontello-location"></i>
-											3B Ksquare Townhomes, Cenacle Drive, Sanville Subd. Culiat Quezon City 1128, Philippines
-										</p>
-
-										<p>
-											<i class="fontello-phone-call"></i>
-											+63 909098686
-										</p>
-
-										<p>
-											<i class="fontello-mail"></i>
-											<a href="mailto:support@watchland.com">genelogicagric@gmail.com</a>
-										</p>
-									</address>
-
-									<div class="social-btns">
-										<div class="social-btns__inner">
-											<a class="fontello-twitter" href="#" target="_blank"></a>
-											<a class="fontello-facebook" href="#" target="_blank"></a>
-											<a class="fontello-linkedin-squared" href="#" target="_blank"></a>
-											<a class="fontello-youtube" href="#" target="_blank"></a>
-											<a class="fontello-gplus" href="#" target="_blank"></a>
-											<a class="fontello-vimeo" href="#" target="_blank"></a>
-											<a class="fontello-vkontakte" href="#" target="_blank"></a>
-											<a class="fontello-instagram" href="#" target="_blank"></a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-12 col-md-6 bg-2">
-							<div class="item">
-								<header class="item__header">
-									<h2 class="item__title">Get In Touch</h2>
-
-									<p class="item__subtitle">Vinyl grown remarkable in survey wherever parents are it's. Mega bold action. Sold care</p>
-								</header>
-
-								<form class="f1 js-contact-form" action="#">
-									<label class="input-wrp">
-										<i class="fontello-user"></i>
-										<input class="textfield" type="text" placeholder="You name" name="name" />
-									</label>
-
-									<label class="input-wrp">
-										<i class="fontello-mail"></i>
-										<input class="textfield" type="text" placeholder="E-mail" name="email" />
-									</label>
-
-									<label class="input-wrp">
-										<i class="fontello-comment"></i>
-										<textarea class="textfield" placeholder="Comment" name="message"></textarea>
-									</label>
-
-									<div class="btn-wrp">
-										<button class="custom-btn long" type="submit" role="button">Send a message</button>
-									</div>
-
-									<div class="form__note"></div>
-								</form>
-							</div>
-						</div>
-					
-					</div>
-				</div>
-			</section>
-			<!-- end section -->
-		</main>
-
-
-
-		<div id="btn-to-top-wrap">
-			<a id="btn-to-top" class="circled" href="javascript:void(0);" data-visible-offset="1000"></a>
-		</div>
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="../js/jquery-2.2.4.min.js"><\/script>')</script>
-
-		<script type="text/javascript" src="../js/main.min.js"></script>
-		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-		<script>
-			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-			e.src='https://www.google-analytics.com/analytics.js';
-			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-			ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-		</script>
-	</body>
+    <script type="text/javascript">
+      var _html = document.documentElement;
+      _html.className = _html.className.replace("no-js", "js");
+    </script>
+    <script type="text/javascript" src="../js/device.min.js"></script>
+  </head>
+  <body class="page page-gallery">
+    <!-- start top bar -->
+    <div id="top-bar" class="top-bar--style-1">
+      <div class="container">
+        <a id="top-bar__logo" class="site-logo" href="index.html">Gene Logic</a>
+        <a id="top-bar__navigation-toggler" href="javascript:void(0);"
+          ><span></span
+        ></a>
+        <nav id="top-bar__navigation" role="navigation">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="index.html">About</a>
+            </li>
+            <li class="current">
+              <a href="index.html">Product Categories</a>
+            </li>
+            <li><a href="index.html">Services</a></li>
+            <li><a href="index.html">News</a></li>
+            <li class="li-btn">
+              <a class="custom-btn primary" href="#spy-get-in-touch"
+                >Get in touch</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- end top bar -->
+
+    <!-- start header -->
+    <header
+      class="intro  align-items-center  jarallax"
+      data-speed="0.5"
+      data-img-position="50% 34%"
+      style="background-image: url('../img/bg/bg_4.jpg');"
+    >
+      <div class="pattern" style="opacity: 0.25;"></div>
+
+      <div class="container">
+        <div class="intro__text">
+          <p class="intro__subtitle">GeneLogic</p>
+          <h1 class="intro__title">Products</h1>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <main role="main">
+      <!-- start section -->
+      <section class="section">
+        <div class="container">
+          <ul id="gallery-set">
+            <li><a class="selected" data-cat="*" href="#">All</a></li>
+            <li><a data-cat="category-1" href="#">Veterinary Products</a></li>
+            <li><a data-cat="category-2" href="#">Feed Additives</a></li>
+            <li><a data-cat="category-3" href="#">Raw Materials</a></li>
+            <li><a data-cat="category-4" href="#">Diagnostic Kit</a></li>
+          </ul>
+
+          <div class="gallery gallery--style-2">
+            <div class="gallery__inner">
+              <div
+                class="row  js-isotope"
+                data-isotope-options='{ "itemSelector": ".js-isotope__item", "transitionDuration": "0.8s", "percentPosition": "true"}'
+              >
+                <!-- start item -->
+                <div
+                  class="col-12 col-md-6 col-lg-4  js-isotope__item category-1"
+                >
+                  <div class="gallery__item">
+                    <div class="gallery__item__inner">
+                      <figure>
+                        <img
+                          src="../img/blank.gif"
+                          style="background-image: url('../img/items/VETERINARY PRODUCTS/EKYBION.png');"
+                          alt="EKYBION"
+                        />
+
+                        <a
+                          href="../img/items/VETERINARY PRODUCTS/EKYBION.png"
+                          data-gallery="gall"
+                        ></a>
+                      </figure>
+                    </div>
+
+                    <div class="gallery__item__description">
+                      <span class="gallery__item__title"
+                        >EKYBION (Nasal Spray for Horse)</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- end item -->
+
+                <!-- start item -->
+                <div
+                  class="col-12 col-md-6 col-lg-4  js-isotope__item category-1"
+                >
+                  <div class="gallery__item">
+                    <div class="gallery__item__inner">
+                      <figure>
+                        <img
+                          src="../img/blank.gif"
+                          style="background-image: url('../img/items/VETERINARY PRODUCTS/CADISTAN.png');"
+                          alt="CANDISTAN"
+                        />
+
+                        <a
+                          href="../img/items/VETERINARY PRODUCTS/CADISTAN.png"
+                          data-gallery="gall"
+                        ></a>
+                      </figure>
+                    </div>
+
+                    <div class="gallery__item__description">
+                      <span class="gallery__item__title">CANDISTAN 4.4%</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end item -->
+
+                <!-- start item -->
+                <div
+                  class="col-12 col-md-6 col-lg-4  js-isotope__item category-1"
+                >
+                  <div class="gallery__item">
+                    <div class="gallery__item__inner">
+                      <figure>
+                        <img
+                          src="../img/blank.gif"
+                          style="background-image: url('../img/items/VETERINARY PRODUCTS/MOXILA.png');"
+                          alt="MOXILA 15%"
+                        />
+
+                        <a
+                          href="../img/items/VETERINARY PRODUCTS/MOXILA.png"
+                          data-gallery="gall"
+                        ></a>
+                      </figure>
+                    </div>
+
+                    <div class="gallery__item__description">
+                      <span class="gallery__item__title">MOXI LA 15%</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end item -->
+                <!-- start item -->
+                <div
+                  class="col-12 col-md-6 col-lg-4  js-isotope__item category-1"
+                >
+                  <div class="gallery__item">
+                    <div class="gallery__item__inner">
+                      <figure>
+                        <img
+                          src="../img/blank.gif"
+                          style="background-image: url('../img/items/VETERINARY PRODUCTS/LINCO ACTIN.png');"
+                          alt="LINCO ACTIN"
+                        />
+
+                        <a
+                          href="../img/items/VETERINARY PRODUCTS/LINCO ACTIN.png"
+                          data-gallery="gall"
+                        ></a>
+                      </figure>
+                    </div>
+
+                    <div class="gallery__item__description">
+                      <span class="gallery__item__title">LINCO ACTIN</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end item -->
+
+                <!-- start item -->
+                <div
+                  class="col-12 col-md-6 col-lg-4  js-isotope__item category-2"
+                >
+                  <div class="gallery__item">
+                    <div class="gallery__item__inner">
+                      <figure>
+                        <img
+                          src="../img/blank.gif"
+                          style="background-image: url('../img/items/FEED ADDITIVES/MEAT GAIN EXTREME.png');"
+                          alt="MEAT GAIN EXTREME"
+                        />
+                        <a
+                          href="../img/items/FEED ADDITIVES/MEAT GAIN EXTREME.png"
+                          data-gallery="gall"
+                        ></a>
+                      </figure>
+                    </div>
+
+                    <div class="gallery__item__description">
+                      <span class="gallery__item__title">MEAT GAIN XTREME</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end item -->
+
+                <!-- start item -->
+                <div
+                  class="col-12 col-md-6 col-lg-4  js-isotope__item  category-2"
+                >
+                  <div class="gallery__item">
+                    <div class="gallery__item__inner">
+                      <figure>
+                        <img
+                          src="../img/blank.gif"
+                          style="background-image: url('../img/items/FEED ADDITIVES/MAXIPEP.png');"
+                          alt="MAXIPEP"
+                        />
+                        <a
+                          href="../img/items/FEED ADDITIVES/MAXIPEP.png"
+                          data-gallery="gall"
+                        ></a>
+                      </figure>
+                    </div>
+
+                    <div class="gallery__item__description">
+                      <span class="gallery__item__title">MAXIPEP</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end item -->
+
+                <!-- start item -->
+                <div
+                  class="col-12 col-md-6 col-lg-4  js-isotope__item category-2"
+                >
+                  <div class="gallery__item">
+                    <div class="gallery__item__inner">
+                      <figure>
+                        <img
+                          src="../img/blank.gif"
+                          style="background-image: url('../img/items/FEED ADDITIVES/YEAST POWDER FEED GRADE.png');"
+                          alt="YEAST POWDER FEED GRADE"
+                        />
+                        <a
+                          href="../img/items/FEED ADDITIVES/YEAST POWDER FEED GRADE.png"
+                          data-gallery="gall"
+                        ></a>
+                      </figure>
+                    </div>
+
+                    <div class="gallery__item__description">
+                      <span class="gallery__item__title"
+                        >YEAST POWDER FEED GRADE</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- end item -->
+
+                <!-- start item -->
+                <div
+                  class="col-12 col-md-6 col-lg-4  js-isotope__item  category-2"
+                >
+                  <div class="gallery__item">
+                    <div class="gallery__item__inner">
+                      <figure>
+                        <img
+                          src="../img/blank.gif"
+                          style="background-image: url('../img/items/FEED ADDITIVES/FISH MEAL.png');"
+                          alt="FISH MEAL"
+                        />
+                        <a
+                          href="../img/items/FEED ADDITIVES/FISH MEAL.png"
+                          data-gallery="gall"
+                        ></a>
+                      </figure>
+                    </div>
+
+                    <div class="gallery__item__description">
+                      <span class="gallery__item__title">FISH MEAL</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end item -->
+
+                <!-- start item -->
+                <div
+                  class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3"
+                >
+                  <div class="gallery__item">
+                    <div class="gallery__item__inner">
+                      <figure>
+                        <img
+                          src="../img/blank.gif"
+                          style="background-image: url('../img/items/RAW MATERIALS/GLACXYLIC.png');"
+                          alt="GLACXYLIC OIL MONOLAURATE 45.5%"
+                        />
+
+                        <a
+                          href="../img/items/RAW MATERIALS/GLACXYLIC.png"
+                          data-gallery="gall"
+                        ></a>
+                      </figure>
+                    </div>
+
+                    <div class="gallery__item__description">
+                      <span class="gallery__item__title"
+                        >GLACXYLIC OIL MONOLAURATE 45.5%</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- end item -->
+
+                <!-- start item -->
+                <div
+                  class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3"
+                >
+                  <div class="gallery__item">
+                    <div class="gallery__item__inner">
+                      <figure>
+                        <img
+                          src="../img/blank.gif"
+                          style="background-image: url('../img/items/RAW MATERIALS/GLACXYLIC10.png');"
+                          alt="GLACXYLIC OIL MONOLAURATE 10%"
+                        />
+                        <a
+                          href="../img/items/RAW MATERIALS/GLACXYLIC10.png"
+                          data-gallery="gall"
+                        ></a>
+                      </figure>
+                    </div>
+
+                    <div class="gallery__item__description">
+                      <span class="gallery__item__title"
+                        >GLACXYLIC OIL MONOLAURATE 10%</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- end item -->
+                <!-- start item -->
+                <div
+                  class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3"
+                >
+                  <div class="gallery__item">
+                    <div class="gallery__item__inner">
+                      <figure>
+                        <img
+                          src="../img/blank.gif"
+                          style="background-image: url('../img/items/RAW MATERIALS/LONGWANDASOW.png');"
+                          alt="LONGWANDA PROBIO (sow)"
+                        />
+                        <a
+                          href="../img/items/RAW MATERIALS/LONGWANDASOW.png"
+                          data-gallery="gall"
+                        ></a>
+                      </figure>
+                    </div>
+
+                    <div class="gallery__item__description">
+                      <span class="gallery__item__title"
+                        >Longwanda Probio (sow)</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- end item -->
+
+                <!-- start item -->
+                <div
+                  class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3"
+                >
+                  <div class="gallery__item">
+                    <div class="gallery__item__inner">
+                      <figure>
+                        <img
+                          src="../img/blank.gif"
+                          style="background-image: url('../img/items/RAW MATERIALS/LONGWANDA PROBIO.png');"
+                          alt="Longwanda Probio (Pig universal/general type)"
+                        />
+                        <a
+                          href="../img/items/RAW MATERIALS/LONGWANDA PROBIO.png"
+                          data-gallery="gall"
+                        ></a>
+                      </figure>
+                    </div>
+
+                    <div class="gallery__item__description">
+                      <span class="gallery__item__title"
+                        >Longwanda Probio (Pig universal/general type)</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- end item -->
+
+                <!-- start item -->
+                <div
+                  class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3"
+                >
+                  <div class="gallery__item">
+                    <div class="gallery__item__inner">
+                      <figure>
+                        <img
+                          src="../img/blank.gif"
+                          style="background-image: url('../img/items/RAW MATERIALS/LONGWANDA PROBIOTICS.png');"
+                          alt="LONGWANDA PROBIOTICS"
+                        />
+                        <a
+                          href="../img/items/RAW MATERIALS/LONGWANDA PROBIOTICS.png"
+                          data-gallery="gall"
+                        ></a>
+                      </figure>
+                    </div>
+
+                    <div class="gallery__item__description">
+                      <span class="gallery__item__title"
+                        >Longwanda Probiotics</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- end item -->
+
+                <!-- start item -->
+                <div
+                  class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3"
+                >
+                  <div class="gallery__item">
+                    <div class="gallery__item__inner">
+                      <figure>
+                        <img
+                          src="../img/blank.gif"
+                          style="background-image: url('../img/items/RAW MATERIALS/GEN CBS-50.png');"
+                          alt="GEN CBS-50"
+                        />
+
+                        <a
+                          href="../img/items/RAW MATERIALS/GEN CBS-50.png"
+                          data-gallery="gall"
+                        ></a>
+                      </figure>
+                    </div>
+
+                    <div class="gallery__item__description">
+                      <span class="gallery__item__title">Gen CBS-50</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end item -->
+
+                <!-- start item -->
+                <div
+                  class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3"
+                >
+                  <div class="gallery__item">
+                    <div class="gallery__item__inner">
+                      <figure>
+                        <img
+                          src="../img/blank.gif"
+                          style="background-image: url('../img/items/RAW MATERIALS/LOG P-GABA.png');"
+                          alt="Log P-GABA"
+                        />
+                        <a
+                          href="../img/items/RAW MATERIALS/LOG P-GABA.png"
+                          data-gallery="gall"
+                        ></a>
+                      </figure>
+                    </div>
+
+                    <div class="gallery__item__description">
+                      <span class="gallery__item__title">Log P-GABA</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end item -->
+
+                <!-- start item -->
+                <div
+                  class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3"
+                >
+                  <div class="gallery__item">
+                    <div class="gallery__item__inner">
+                      <figure>
+                        <img
+                          src="../img/blank.gif"
+                          style="background-image: url('../img/items/RAW MATERIALS/PER ZINC S.png');"
+                          alt="Per Zinc S"
+                        />
+
+                        <a
+                          href="../img/items/RAW MATERIALS/PER ZINC S.png"
+                          data-gallery="gall"
+                        ></a>
+                      </figure>
+                    </div>
+
+                    <div class="gallery__item__description">
+                      <span class="gallery__item__title">Per Zinc S</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end item -->
+
+                <!-- start item -->
+                <div
+                  class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3"
+                >
+                  <div class="gallery__item">
+                    <div class="gallery__item__inner">
+                      <figure>
+                        <img
+                          src="../img/blank.gif"
+                          style="background-image: url('../img/items/RAW MATERIALS/GLY.png');"
+                          alt="PerFerrous Gly"
+                        />
+
+                        <a
+                          href="../img/items/RAW MATERIALS/GLY.png"
+                          data-gallery="gall"
+                        ></a>
+                      </figure>
+                    </div>
+
+                    <div class="gallery__item__description">
+                      <span class="gallery__item__title">PerFerrous Gly</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end item -->
+
+                <!-- start item -->
+                <div
+                  class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3"
+                >
+                  <div class="gallery__item">
+                    <div class="gallery__item__inner">
+                      <figure>
+                        <img
+                          src="../img/blank.gif"
+                          style="background-image: url('../img/items/RAW MATERIALS/PLUS.png');"
+                          alt="PerFerrous Plus"
+                        />
+                        <a
+                          href="../img/items/RAW MATERIALS/PLUS.png"
+                          data-gallery="gall"
+                        ></a>
+                      </figure>
+                    </div>
+
+                    <div class="gallery__item__description">
+                      <span class="gallery__item__title">PerFerrous Plus</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end item -->
+
+                <!-- start item -->
+                <div
+                  class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3"
+                >
+                  <div class="gallery__item">
+                    <div class="gallery__item__inner">
+                      <figure>
+                        <img
+                          src="../img/blank.gif"
+                          style="background-image: url('../img/items/RAW MATERIALS/PER PREMIX SNR.png');"
+                          alt="Per Premix SNR "
+                        />
+                        <a
+                          href="../img/items/RAW MATERIALS/PER PREMIX SNR.png"
+                          data-gallery="gall"
+                        ></a>
+                      </figure>
+                    </div>
+
+                    <div class="gallery__item__description">
+                      <span class="gallery__item__title">Per Premix SNR </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end item -->
+
+                <!-- start item -->
+                <div
+                  class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3"
+                >
+                  <div class="gallery__item">
+                    <div class="gallery__item__inner">
+                      <figure>
+                        <img
+                          src="../img/blank.gif"
+                          style="background-image: url('../img/items/RAW MATERIALS/LOG SNR R.png');"
+                          alt="Log SNR R"
+                        />
+                        <a
+                          href="../img/items/RAW MATERIALS/LOG SNR R.png"
+                          data-gallery="gall"
+                        ></a>
+                      </figure>
+                    </div>
+
+                    <div class="gallery__item__description">
+                      <span class="gallery__item__title"
+                        >Log SNR R (Per Premix SNR Rice Oil)
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end item -->
+
+                <!-- start item -->
+                <div
+                  class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3"
+                >
+                  <div class="gallery__item">
+                    <div class="gallery__item__inner">
+                      <figure>
+                        <img
+                          src="../img/blank.gif"
+                          style="background-image: url('../img/items/RAW MATERIALS/LONG SNR CO.png');"
+                          alt="LONG SNR CO"
+                        />
+                        <a
+                          href="../img/items/RAW MATERIALS/LONG SNR CO.png"
+                          data-gallery="gall"
+                        ></a>
+                      </figure>
+                    </div>
+
+                    <div class="gallery__item__description">
+                      <span class="gallery__item__title"
+                        >Log SNR CO (PerPremix SNR Coconut Oil)</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- end item -->
+
+                <!-- start item -->
+                <div
+                  class="col-12 col-md-6 col-lg-4  js-isotope__item  category-3"
+                >
+                  <div class="gallery__item">
+                    <div class="gallery__item__inner">
+                      <figure>
+                        <img
+                          src="../img/blank.gif"
+                          style="background-image: url('../img/items/RAW MATERIALS/PER SNR LO.png');"
+                          alt="Per SNR LO"
+                        />
+                        <a
+                          href="../img/items/RAW MATERIALS/PER SNR LO.png"
+                          data-gallery="gall"
+                        ></a>
+                      </figure>
+                    </div>
+
+                    <div class="gallery__item__description">
+                      <span class="gallery__item__title"
+                        >Per SNR LO (PerPremix SNR LINSEED OIL)
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end item -->
+
+                <!-- start item -->
+                <div
+                  class="col-12 col-md-6 col-lg-4  js-isotope__item  category-4"
+                >
+                  <div class="gallery__item">
+                    <div class="gallery__item__inner">
+                      <figure>
+                        <img
+                          src="../img/blank.gif"
+                          style="background-image: url('../img/items/DIAGNOSTIC KIT/EBS SENTINEL.png');"
+                          alt="EBS Sentinel ASFV Antibody Rapid Test Kit"
+                        />
+                        <a
+                          href="../img/items/DIAGNOSTIC KIT/EBS SENTINEL.png"
+                          data-gallery="gall"
+                        ></a>
+                      </figure>
+                    </div>
+
+                    <div class="gallery__item__description">
+                      <span class="gallery__item__title"
+                        >EBS Sentinel ASFV Antibody Rapid Test Kit
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end item -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end section -->
+
+      <!-- start section -->
+      <a id="spy-get-in-touch" class="ancor"></a>
+      <section class="section-contact">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-md-6 bg-1">
+              <div class="item">
+                <header class="item__header">
+                  <h2 class="item__title" style="color: white;">Contacts</h2>
+
+                  <p class="item__subtitle" style="color: white;">
+                    Mega bold action. Sold care wherever less appetizing your
+                    far easily
+                  </p>
+                </header>
+
+                <div class="company-contacts">
+                  <address>
+                    <p>
+                      <i class="fontello-location"></i>
+                      3B Ksquare Townhomes, Cenacle Drive, Sanville Subd. Culiat
+                      Quezon City 1128, Philippines
+                    </p>
+
+                    <p>
+                      <i class="fontello-phone-call"></i>
+                      +63 909098686
+                    </p>
+
+                    <p>
+                      <i class="fontello-mail"></i>
+                      <a href="mailto:support@watchland.com"
+                        >genelogicagric@gmail.com</a
+                      >
+                    </p>
+                  </address>
+
+                  <div class="social-btns">
+                    <div class="social-btns__inner">
+                      <a class="fontello-twitter" href="#" target="_blank"></a>
+                      <a class="fontello-facebook" href="#" target="_blank"></a>
+                      <a
+                        class="fontello-linkedin-squared"
+                        href="#"
+                        target="_blank"
+                      ></a>
+                      <a class="fontello-youtube" href="#" target="_blank"></a>
+                      <a class="fontello-gplus" href="#" target="_blank"></a>
+                      <a class="fontello-vimeo" href="#" target="_blank"></a>
+                      <a
+                        class="fontello-vkontakte"
+                        href="#"
+                        target="_blank"
+                      ></a>
+                      <a
+                        class="fontello-instagram"
+                        href="#"
+                        target="_blank"
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 bg-2">
+              <div class="item">
+                <header class="item__header">
+                  <h2 class="item__title">Get In Touch</h2>
+
+                  <p class="item__subtitle">
+                    Vinyl grown remarkable in survey wherever parents are it's.
+                    Mega bold action. Sold care
+                  </p>
+                </header>
+
+                <form class="f1 js-contact-form" action="#">
+                  <label class="input-wrp">
+                    <i class="fontello-user"></i>
+                    <input
+                      class="textfield"
+                      type="text"
+                      placeholder="You name"
+                      name="name"
+                    />
+                  </label>
+
+                  <label class="input-wrp">
+                    <i class="fontello-mail"></i>
+                    <input
+                      class="textfield"
+                      type="text"
+                      placeholder="E-mail"
+                      name="email"
+                    />
+                  </label>
+
+                  <label class="input-wrp">
+                    <i class="fontello-comment"></i>
+                    <textarea
+                      class="textfield"
+                      placeholder="Comment"
+                      name="message"
+                    ></textarea>
+                  </label>
+
+                  <div class="btn-wrp">
+                    <button class="custom-btn long" type="submit" role="button">
+                      Send a message
+                    </button>
+                  </div>
+
+                  <div class="form__note"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end section -->
+    </main>
+
+    <div id="btn-to-top-wrap">
+      <a
+        id="btn-to-top"
+        class="circled"
+        href="javascript:void(0);"
+        data-visible-offset="1000"
+      ></a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write('<script src="../js/jquery-2.2.4.min.js"><\/script>');
+    </script>
+
+    <script type="text/javascript" src="../js/main.min.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] ||
+          (b[l] = function() {
+            (b[l].q = b[l].q || []).push(arguments);
+          });
+        b[l].l = +new Date();
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = "https://www.google-analytics.com/analytics.js";
+        r.parentNode.insertBefore(e, r);
+      })(window, document, "script", "ga");
+      ga("create", "UA-XXXXX-X", "auto");
+      ga("send", "pageview");
+    </script>
+  </body>
 </html>
